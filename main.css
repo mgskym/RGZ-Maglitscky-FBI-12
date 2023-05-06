@@ -1,3 +1,18 @@
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-	background-color: #f1f1f1;
+	background-color: #f7f7f7;
+	color: #222222;
+	font-family: 'Montserrat';
+	line-height: 20px;
+	font-size: 16px;
+}
+
+#headerlogo {
+	width: 32px;
+	height: 32px;
 }
