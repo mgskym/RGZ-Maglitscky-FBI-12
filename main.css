@@ -7,6 +7,7 @@ body {
 	font-family: 'Montserrat';
 	line-height: 20px;
 	font-size: 16px;
+	font-weight: 400;
 }
 
 a {
@@ -14,16 +15,99 @@ a {
 	color: inherit;
 }
 
+iframe {
+	width: 50%;
+	height: 400px;
+}
 
-.header {
-	padding-left: 16px;
-	padding-right: 16px;
+h1 {
+	font-size: 28px;
+	font-style: bold;
+	font-weight: 700;
+	margin-top: 4px;
+	margin-bottom: 24px;
+	margin-right: 0;
+	margin-left: 0;
+
+}
+
+h2 {
+	font-size: 22px;
+	font-style: bold;
+	font-weight: 700;
+	margin-top: 4px;
+	margin-bottom: 24px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+h3 {
+	font-size: 18px;
+	font-style: bold;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 16px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+p {
+	line-height: 1.625;
+	margin-bottom: 12px;
+}
+
+.personInfo {
+	align-items: center;
+	display: flex;
+	margin-bottom: 24px;
+}
+
+.caption {
+	font-size: 14px;
+	font-style: italic;
+	color: #777777;
+}
+
+.container {
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	padding: 48px;
+	padding-top: 32px;
+	border-top: 0;
+	margin-right: 208px;
+	margin-left: 208px;
+	margin-top: 46px;
+}
+
+.button {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 12px;
+	padding-left: 12px;
+	background-color: #009E59;
+	color: #ffffff;
+	font-size: 12px;
+	border-radius: 4px;
+	transition: 0.3s;
+}
+
+.button:hover {
+	background-color: #3FB682;
+}
+
+header {
+	padding-left: 256px;
+	padding-right: 256px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	background-color: #ffffff;
 	align-items: center;
 	display: flex;
 	border: 1px solid #dddddd;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 .headernav {
@@ -44,4 +128,17 @@ a {
 #headerlogo {
 	width: 20px;
 	height: 20px;
+}
+
+footer {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: 64px;
+	padding-left: 256px;
+	padding-right: 256px;
+	padding-top: 24px;
+	padding-bottom: 48px;
+	color: #DADADA;
+	background-color: #222222;
 }
