@@ -43,9 +43,23 @@ function insertDataToTable() {
 function analysePrices() {
 	let minPrice = Math.min(...(Object.values(closingPrices)));
 	let maxPrice = Math.max(...(Object.values(closingPrices)));
-	
-	document.getElementById('cardMin').innerText = minPrice;
-	document.getElementById('cardMax').innerText = maxPrice;
+
+	let sumArray = 0;
+	let valueRow = document.getElementsByClassName('value');
+	for (let i = 0; i < valueRow.length; i++) {
+		sumArray += Object.values(closingPrices)[i];
+	}
+	let E = sumArray / valueRow.length;
+
+	let sumXiE = 0;
+	for (let i = 0; i < valueRow.length; i++) {
+		sumXiE += (Object.values(closingPrices)[i] - E)**2;
+	}
+	let deviation = Math.sqrt((sumXiE) / Object.values(closingPrices).length);
+
+	document.getElementById('cardMin').innerHTML = (`${minPrice}<span style="color: #9B9B9B; font-weight: 400; margin-left: 4px;"> ₽</span>`);
+	document.getElementById('cardMax').innerHTML = (`${maxPrice}<span style="color: #9B9B9B; font-weight: 400; margin-left: 4px;"> ₽</span>`);
+	document.getElementById('cardDeviation').innerHTML = Math.round(deviation * 100000) / 100000;
 }
 
 insertDataToTable();
