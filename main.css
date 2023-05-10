@@ -4,28 +4,24 @@ body {
 	box-sizing: border-box;
 	background-color: #f7f7f7;
 	color: #222222;
-	font-family: 'Montserrat';
-	line-height: 20px;
+	font-family: Helvetica;
+	letter-spacing: 0.1px;
+	word-spacing: 1px;
+	line-height: 24px;
 	font-size: 16px;
 	font-weight: 400;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
-}
-
-iframe {
-	width: 50%;
-	height: 400px;
+	color: #009E59;
 }
 
 h1 {
-	font-size: 28px;
+	font-size: 36px;
 	font-style: bold;
-	font-weight: 700;
+	font-weight: 800;
 	margin-top: 4px;
-	margin-bottom: 24px;
+	margin-bottom: 36px;
 	margin-right: 0;
 	margin-left: 0;
 
@@ -34,7 +30,7 @@ h1 {
 h2 {
 	font-size: 22px;
 	font-style: bold;
-	font-weight: 700;
+	font-weight: 800;
 	margin-top: 4px;
 	margin-bottom: 24px;
 	margin-right: 0;
@@ -72,11 +68,22 @@ p {
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
 	padding: 48px;
-	padding-top: 32px;
+	padding-top: 48px;
 	border-top: 0;
 	margin-right: 208px;
 	margin-left: 208px;
 	margin-top: 46px;
+	margin-bottom: 96px;
+}
+
+.card {
+	width: 24%;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	padding-right: 24px;
+	padding-left: 24px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 16px rgb(16 16 16 / 8%);
 }
 
 .button {
@@ -89,6 +96,7 @@ p {
 	font-size: 12px;
 	border-radius: 4px;
 	transition: 0.3s;
+	text-decoration: none;
 }
 
 .button:hover {
@@ -104,6 +112,7 @@ header {
 	align-items: center;
 	display: flex;
 	border: 1px solid #dddddd;
+	border-top: 0;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -119,6 +128,8 @@ header {
 	font-size: 12px;
 	font-weight: 600;
 	margin-right: 24px;
+	text-decoration: none;
+	color: inherit;
 }
 
 .navlink:hover {
