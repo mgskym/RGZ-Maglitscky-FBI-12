@@ -4,7 +4,7 @@ body {
 	box-sizing: border-box;
 	background-color: #f7f7f7;
 	color: #222222;
-	font-family: Helvetica;
+	font-family: 'Mulish';
 	letter-spacing: 0.1px;
 	word-spacing: 1px;
 	line-height: 24px;
@@ -113,6 +113,8 @@ td {
 	margin-right: 24px;
 	background-color: #ffffff;
 	box-shadow: 0 4px 16px rgb(16 16 16 / 8%);
+	border: 1px solid #dddddd;
+	border-radius: 4px;
 }
 
 .card:last-child {

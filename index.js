@@ -28,33 +28,43 @@ let closingPrices = {
 	'25.04.2023': 3.872,
 	'26.04.2023': 3.872,
 	'27.04.2023': 3.9,
-	'28.04.2023': 3.816,
+	'28.04.2023': 3.816
 };
 
 function insertDataToTable() {
-	let dateRow = document.getElementsByClassName('date');
-	let valueRow = document.getElementsByClassName('value');
-	for (let i = 0; i < dateRow.length; i++) {
-		dateRow[i].innerHTML = Object.keys(closingPrices)[i];
-		valueRow[i].innerHTML = Object.values(closingPrices)[i];
+	let insertDate = document.getElementById('closingDateRow');
+	let insertValue = document.getElementById('closingValueRow');
+	for (let i = 0; i < Object.keys(closingPrices).length; i++) {
+		let tddate = document.createElement('td');
+		tddate.classList.add('date');
+		tddate.innerHTML = Object.keys(closingPrices)[i];
+
+		insertDate.appendChild(tddate);
+
+		let tdvalue = document.createElement('td');
+		tdvalue.classList.add('value');
+		tdvalue.innerHTML = Object.values(closingPrices)[i];
+		
+		insertValue.appendChild(tdvalue);
 	}
 }
 
 function analysePrices() {
 	let minPrice = Math.min(...(Object.values(closingPrices)));
 	let maxPrice = Math.max(...(Object.values(closingPrices)));
+	let valueRow = document.getElementsByClassName('value');
 
 	let sumArray = 0;
-	let valueRow = document.getElementsByClassName('value');
+	let sumXiE = 0;
 	for (let i = 0; i < valueRow.length; i++) {
 		sumArray += Object.values(closingPrices)[i];
 	}
-	let E = sumArray / valueRow.length;
 
-	let sumXiE = 0;
+	let E = sumArray / valueRow.length;
 	for (let i = 0; i < valueRow.length; i++) {
 		sumXiE += (Object.values(closingPrices)[i] - E)**2;
 	}
+
 	let deviation = Math.sqrt((sumXiE) / Object.values(closingPrices).length);
 
 	document.getElementById('cardMin').innerHTML = (`${minPrice}<span style="color: #9B9B9B; font-weight: 400; margin-left: 4px;"> ₽</span>`);
