@@ -52,11 +52,17 @@ p {
 	margin-bottom: 12px;
 }
 
+iframe {
+	border: 1px solid #dddddd;
+	border-radius: 8px;
+}
+
 table {
 	border-spacing: 0;
 	border: 1px solid #9B9B9B;
-	border-radius: 4px;
 	margin-bottom: 12px;
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 td {
@@ -97,12 +103,12 @@ td {
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
 	padding: 48px;
-	padding-top: 48px;
 	border-top: 0;
 	margin-right: 208px;
 	margin-left: 208px;
 	margin-top: 46px;
 	margin-bottom: 96px;
+	border-radius: 8px;
 }
 
 .card {
@@ -114,7 +120,7 @@ td {
 	background-color: #ffffff;
 	box-shadow: 0 4px 16px rgb(16 16 16 / 8%);
 	border: 1px solid #dddddd;
-	border-radius: 4px;
+	border-radius: 8px;
 }
 
 .card:last-child {
@@ -127,15 +133,27 @@ td {
 	font-weight: 600;
 }
 
+.marker {
+	width: 4px;
+	height: 24px;
+	left: 24px;
+	bottom: 32px;
+	margin-right: 16px;
+	border-radius: 4px;
+	margin-top: auto;
+}
+
 .button {
+	display: inline-block;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 12px;
 	padding-left: 12px;
 	background-color: #009E59;
 	color: #ffffff;
-	font-size: 12px;
-	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 8px;
 	transition: 0.3s;
 	text-decoration: none;
 }
@@ -144,6 +162,43 @@ td {
 	background-color: #3FB682;
 }
 
+.smallButton {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 8px;
+	padding-left: 8px;
+	background-color: #009E59;
+	color: #ffffff;
+	font-size: 12px;
+	border-radius: 4px;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.smallButton:hover {
+	background-color: #3FB682;
+}
+
+.footerButton {
+	align-items: center;
+	display: flex;
+	margin-top: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 12px;
+	padding-left: 12px;
+	background-color: #DADADA;;
+	color: #222222;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 8px;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.footerButton:hover {
+	background-color: #ffffff;
+}
 header {
 	padding-left: 256px;
 	padding-right: 256px;
@@ -193,4 +248,5 @@ footer {
 	padding-bottom: 48px;
 	color: #DADADA;
 	background-color: #222222;
+	display: flex;
 }

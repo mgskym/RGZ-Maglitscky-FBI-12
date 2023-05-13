@@ -46,6 +46,23 @@ function insertDataToTable() {
 		tdvalue.innerHTML = Object.values(closingPrices)[i];
 		
 		insertValue.appendChild(tdvalue);
+
+		if (tdvalue.innerHTML == Math.min(...(Object.values(closingPrices)))) {
+			tdvalue.style.backgroundColor = '#FFE9E9';
+			tdvalue.style.color = '#CC2C2C';
+			tdvalue.style.fontWeight = 'bold';
+			tddate.style.backgroundColor = '#FFE9E9';
+			tddate.style.color = '#CC2C2C';
+			tddate.style.fontWeight = 'bold';
+		}
+		else if (tdvalue.innerHTML == Math.max(...(Object.values(closingPrices)))) {
+			tdvalue.style.backgroundColor = '#D9FFEA';
+			tdvalue.style.color = '#279847';
+			tdvalue.style.fontWeight = 'bold';
+			tddate.style.backgroundColor = '#D9FFEA';
+			tddate.style.color = '#279847';
+			tddate.style.fontWeight = 'bold';
+		}
 	}
 }
 
