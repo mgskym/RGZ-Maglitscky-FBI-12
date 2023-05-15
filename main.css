@@ -59,7 +59,7 @@ iframe {
 
 table {
 	border-spacing: 0;
-	border: 1px solid #9B9B9B;
+	border: 1px solid #E2E2E2;
 	margin-bottom: 12px;
 	border-radius: 8px;
 	overflow: hidden;
@@ -75,7 +75,7 @@ td {
 }
 
 .tableContainer {
-	margin-top: 32px;
+	margin-top: 12px;
 	margin-bottom: 32px;
 	width: 100%;
 	overflow-x: auto;
@@ -116,7 +116,7 @@ td {
 	padding-bottom: 28px;
 	padding-right: 24px;
 	padding-left: 24px;
-	margin-right: 24px;
+	margin-right: 16px;
 	background-color: #ffffff;
 	box-shadow: 0 4px 16px rgb(16 16 16 / 8%);
 	border: 1px solid #dddddd;

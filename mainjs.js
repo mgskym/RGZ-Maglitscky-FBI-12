@@ -48,18 +48,18 @@ function insertDataToTable() {
 		insertValue.appendChild(tdvalue);
 
 		if (tdvalue.innerHTML == Math.min(...(Object.values(closingPrices)))) {
-			tdvalue.style.backgroundColor = '#FFE9E9';
+			tdvalue.style.backgroundColor = '#FFE9E965';
 			tdvalue.style.color = '#CC2C2C';
 			tdvalue.style.fontWeight = 'bold';
-			tddate.style.backgroundColor = '#FFE9E9';
+			tddate.style.backgroundColor = '#FFE9E965';
 			tddate.style.color = '#CC2C2C';
 			tddate.style.fontWeight = 'bold';
 		}
 		else if (tdvalue.innerHTML == Math.max(...(Object.values(closingPrices)))) {
-			tdvalue.style.backgroundColor = '#D9FFEA';
+			tdvalue.style.backgroundColor = '#D9FFEA65';
 			tdvalue.style.color = '#279847';
 			tdvalue.style.fontWeight = 'bold';
-			tddate.style.backgroundColor = '#D9FFEA';
+			tddate.style.backgroundColor = '#D9FFEA65';
 			tddate.style.color = '#279847';
 			tddate.style.fontWeight = 'bold';
 		}
