@@ -88,7 +88,3 @@ function analysePrices() {
 	document.getElementById('cardMax').innerHTML = (`${maxPrice}<span style="color: #9B9B9B; font-weight: 400; margin-left: 4px;"> ₽</span>`);
 	document.getElementById('cardDeviation').innerHTML = Math.round(deviation * 100000) / 100000;
 }
-
-insertDataToTable();
-analysePrices();
-
