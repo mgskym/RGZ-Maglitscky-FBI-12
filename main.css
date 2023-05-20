@@ -11,7 +11,7 @@ body {
 	box-sizing: border-box;
 	background-color: #f7f7f7;
 	color: #222222;
-	font-family: 'Mulish';
+	font-family: 'Mulish', sans-serif;
 	letter-spacing: 0.1px;
 	word-spacing: 1px;
 	line-height: 24px;
